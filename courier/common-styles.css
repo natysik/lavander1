@@ -1,0 +1,232 @@
+.modalRegistration {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
+}
+
+.registration-header {
+    background-color: white;
+    color: #5E4767;
+    font-family: PlayfairDisplay;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: normal;
+    background-color: #EDE7E7;
+    padding-left: 15px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.registration-close, .remove {
+    color: #5E4767;
+    float: right;
+    margin-left: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.remove:hover,
+.remove:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.registration-close:hover,
+.registration-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.registration-body {
+    background-color: white;
+    color: #5E4767;
+    font-family: PlayfairDisplay;
+    font-size: 16px;
+    background-color: #EDE7E7;
+}
+
+.registration-form {
+    width: auto;
+    display:inline-block;
+    margin-left: 20px;
+}
+
+.registration-content{
+    top: 20%;
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    width: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    background-color: #EDE7E7;
+}
+
+.textInput{
+    font-family: OpenSans;
+    font-size: 14px;
+    height: 30px;
+    border-radius: 20px;
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.text-input{
+  font-family: OpenSans;
+  font-size: 14px;
+  height: 30px;
+  border-radius: 20px;
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.position{
+    font-family: OpenSans;
+    font-size: 14px;
+    height: 100px;
+    border-radius: 20px;
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.position.break{
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#buttonAdd{
+    text-decoration: none;
+    width: 140px;
+    height: 40px;
+    border-radius: 45px;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 90px;
+    color: #5E4767;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+#buttonAdd:hover {
+    background: #8d2ee5;
+    box-shadow: 0 15px 20px rgba(141, 46, 229, .4);
+    color: white;
+    transform: translateY(-7px);
+}
+
+#error{
+    margin-top: 5px;
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 25px;
+}
+
+.desc{
+  font-family: OpenSans;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.acc{
+    margin-top: 10px;
+    margin-left: 45px;
+    font-family: OpenSans;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
+
+}
+
+#errorLogin, #errorPassword, #errorPasswordRep, #error-name, #error-login, #error-password, #error-rep-password, #error-phone{
+    margin-top: -5px;
+    color: red;
+    font-size: 12px;
+  margin-bottom: 10px ;
+}
+.necessarily{
+  color: red;
+}
+
+form {
+    width: auto;
+    display:inline-block;
+    margin-left: 70px;
+}
+
+.password {
+    position: relative;
+}
+.password-control {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background: url(img/view.png) 0 0 no-repeat;
+}
+.password-control.view {
+    background: url(img/no-view.png) 0 0 no-repeat;
+}
+
+.look{
+    font-family: OpenSans;
+}
+
+
+@media (max-width: 418px){
+    .registration-content{
+    top: 20%;
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    width: 95%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    background-color: #EDE7E7;
+}
+
+.acc{
+    margin-left: 39px;
+    font-size: 14px;
+}
+
+}
